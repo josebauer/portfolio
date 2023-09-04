@@ -1,3 +1,7 @@
+* {
+  list-style: none;
+}
+
 a {
   color: #FFF !important; 
 }
@@ -44,4 +48,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 0;
+}
+
+.contact-item:hover {
+  transform: scale(1.25);
 }
