@@ -1,15 +1,29 @@
+:root {
+  --bg-nav-color: #E10600;
+  --primary-text-color: #000;
+  --link-color: #FFF;
+  --primary-bg-color: #FFF;
+  --secondary-bg-color: #F2F2F2;
+}
+
 * {
-  color: #000;
+  color: var(--primary-text-color);
   list-style: none;
   font-family: 'Fugaz One', cursive;
 }
 
-a {
-  color: #FFF !important; 
-}
-
 section {
   scroll-margin-top: 6rem;
+}
+
+.nav-link, 
+.navbar-brand, 
+.navbar-toggler {
+  color: var(--link-color); 
+}
+
+.navbar-toggler {
+  border-color: #000;
 }
 
 .nav-item .nav-link,
@@ -19,19 +33,18 @@ section {
 
 .navbar {
   margin: 0;
-  background-color: #E10600;
+  background-color: var(--bg-nav-color);
 }
 
-.navbar-toggler {
-  background-color: #FFF;
+.navbar-toggler, .header {
+  background-color: var(--primary-bg-color);
 }
 
 .header {
-  background-color: #FFF;
   justify-content: center;
   text-align: center;
   max-height: 100%;
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 .header .title {
@@ -57,11 +70,10 @@ section {
 }
 
 .about-me {
-  background-color: #F2F2F2;
+  background-color: var(--secondary-bg-color);
   max-height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
   gap: 10px;
 }
 
@@ -71,7 +83,7 @@ section {
 }
 
 .description p {
-  text-align: center;
+  text-align: justify;
 }
 
 .list-hard-skills {
@@ -81,7 +93,12 @@ section {
 }
 
 .list-hard-skills li figure figcaption {
+  margin-top: 0.725rem;
   font-size: 0.725rem;
+}
+
+.list-soft-skills li::before {
+  content: '✱ ';
 }
 
 
