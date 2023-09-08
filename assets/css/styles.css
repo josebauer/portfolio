@@ -1,5 +1,5 @@
 :root {
-  --bg-nav-color: #E10600;
+  --bg-red-color: #E10600;
   --primary-text-color: #000;
   --link-color: #FFF;
   --primary-bg-color: #FFF;
@@ -13,7 +13,7 @@
 }
 
 section {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 18rem;
 }
 
 .nav-link, 
@@ -27,7 +27,8 @@ section {
 }
 
 .nav-item .nav-link,
-.description p {
+.description p, 
+.card-text, .view-more {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -38,7 +39,7 @@ section {
 
 .navbar {
   margin: 0;
-  background-color: var(--bg-nav-color);
+  background-color: var(--bg-red-color);
 }
 
 .navbar-toggler, .header {
@@ -112,20 +113,34 @@ section {
 
 #projects .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 100%);
+  /* grid-template-columns: repeat(3, 100%); */
   grid-auto-flow: column;
   overflow: auto hidden;
-  gap: 50px;
+  gap: 40px;
   background-color: var(--secondary-bg-color);
+}
+
+.card {
+  color: var(--primary-text-color);
+}
+
+.view-more {
+  background-color: var(--bg-red-color);
+  color: var(--link-color);
+}
+
+.view-more:hover {
+  transform: scale(1.05);
+  border-color: var(--bg-red-color);
+  color: var(--bg-red-color);
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-nav-color);
+  background: var(--bg-red-color);
   border-radius: 10px;
 }
 
