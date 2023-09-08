@@ -31,14 +31,14 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top p-2">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#index.html">JHBAUER</a>
+      <a class="navbar-brand fs-3" href="#">JHBAUER</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link"  href="#">Início</a>
@@ -92,7 +92,7 @@
     </header>
 
     <!-- Section 1 - About me -->
-    <section class="about-me d-flex flex-column p-5" id="about-me">
+    <section id="about-me" class="about-me d-flex flex-column p-5">
       <figure class="profile-photo">
         <img src="./assets/images/profile-photo.jpg">
       </figure>
@@ -115,7 +115,7 @@
       <!-- Hard Skills -->
       <div class="d-flex flex-column align-items-center my-5">
         <h2>HARD SKILLS</h2>
-        <ul class="list-hard-skills d-flex align-items-end justify-content-center mx-5 mt-3">
+        <ul class="list-hard-skills d-flex align-items-end justify-content-center mx-5 px-3 mt-3">
           <li class="d-flex text-center">
             <figure>
               <img src="./assets/images/icons/html5.svg" alt="">
@@ -169,6 +169,36 @@
       </div>
 
     </section>
+
+    <!-- Section 3 - Projects -->
+    <section id="projects" class="projects">
+      <div class="projects-container px-5 pt-5 pb-2 mx-5">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/projects-thumb/calc-web.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALCULADORA WEB</h5>
+            <p class="card-text">Calculadora de operações básicas feita com HTML, CSS e JS</p>
+            <a href="#" class="btn btn-primary">Ver mais</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/projects-thumb/calc-web.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALCULADORA WEB</h5>
+            <p class="card-text">Calculadora de operações básicas feita com HTML, CSS e JS</p>
+            <a href="#" class="btn btn-primary">Ver mais</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/projects-thumb/calc-web.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALCULADORA WEB</h5>
+            <p class="card-text">Calculadora de operações básicas feita com HTML, CSS e JS</p>
+            <a href="#" class="btn btn-primary">Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </section>   
   </main>
 
   <!-- Bootstrap -->
