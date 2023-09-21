@@ -135,6 +135,23 @@ section {
   color: var(--bg-red-color);
 }
 
+footer {
+  color: var(--link-color);
+  background-color: var(--bg-red-color);
+}
+
+.contacts p, .link-text { 
+  color: var(--link-color);
+}
+
+.contacts, .footer-li {
+  gap: 1rem;
+}
+
+.link-text {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
