@@ -19,3 +19,7 @@
   color: var(--bg-red-color);
   background-color: var(--link-color);
 }
+
+.project-description {
+  background-color: var(--secondary-bg-color);
+}

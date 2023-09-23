@@ -36,6 +36,6 @@ section {
 
 .nav-item .nav-link,
 .description p, 
-.card-text, .view-more, .btn {
+.card-text, .view-more, .btn, .project-description p {
   font-family: 'Quicksand', sans-serif;
 }
