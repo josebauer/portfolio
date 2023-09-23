@@ -1,0 +1,21 @@
+.project {
+  gap: 3rem;
+}
+
+.buttons {
+  gap: 1rem;
+}
+
+.btn {
+  border-radius: .375rem;
+  background-color: var(--bg-red-color);
+  color: var(--link-color);
+  border-color: var(--bg-red-color);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  border-color: var(--bg-red-color);
+  color: var(--bg-red-color);
+  background-color: var(--link-color);
+}

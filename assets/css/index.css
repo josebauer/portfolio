@@ -1,35 +1,5 @@
-:root {
-  --bg-red-color: #E10600;
-  --primary-text-color: #000;
-  --link-color: #FFF;
-  --primary-bg-color: #FFF;
-  --secondary-bg-color: #F2F2F2;
-}
-
-* {
-  color: var(--primary-text-color);
-  list-style: none;
-  font-family: 'Fugaz One', cursive;
-}
-
-section {
-  scroll-margin-top: 18rem;
-}
-
-.nav-link, 
-.navbar-brand, 
-.navbar-toggler {
-  color: var(--link-color); 
-}
-
 .navbar-toggler {
   border-color: #000;
-}
-
-.nav-item .nav-link,
-.description p, 
-.card-text, .view-more {
-  font-family: 'Quicksand', sans-serif;
 }
 
 .nav-link:hover, 
@@ -37,21 +7,11 @@ section {
   color: var(--secondary-bg-color);
 }
 
-.navbar {
-  margin: 0;
-  background-color: var(--bg-red-color);
-}
-
 .navbar-toggler, .header {
   background-color: var(--primary-bg-color);
 }
 
-.header {
-  justify-content: center;
-  text-align: center;
-  max-height: 100%;
-  padding: 6rem 0;
-}
+
 
 .header .title {
   font-size: 2.5rem;
