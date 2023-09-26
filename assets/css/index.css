@@ -2,18 +2,43 @@
   border-color: #000;
 }
 
-.nav-link:hover, 
-.navbar-brand:hover {
-  color: var(--secondary-bg-color);
+.nav-link {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
 }
 
-.navbar-toggler, .header {
+.nav-link:focus {
+  color: var(--link-color);
+}
+
+.header .contact-icons 
+.contact-item a img, .footer-li img {
+  width: 1.25rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: var(--link-color);
+  color: var(--bg-red-color);
+  transition: 300ms linear;
+}
+
+.navbar-toggler,
+.header {
   background-color: var(--primary-bg-color);
 }
 
+.header {
+  justify-content: center;
+  text-align: center;
+  max-height: 100%;
+  padding: 6rem 0;
+  margin-top: 4rem;
+}
+
 .header .title {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2.625rem;
+  line-height: 2.625rem;
   margin-bottom: 0;
 }
 
@@ -54,6 +79,8 @@
   flex-flow: row wrap;
   gap: 2.5rem;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .list-hard-skills li figure figcaption {
@@ -63,6 +90,7 @@
 
 .list-soft-skills li::before {
   content: '✱ ';
+  padding-right: 0.5rem;
 }
 
 #projects {
@@ -71,10 +99,9 @@
 
 #projects .projects-container {
   display: grid;
-  /* grid-template-columns: repeat(3, 100%); */
   grid-auto-flow: column;
   overflow: auto hidden;
-  gap: 40px;
+  gap: 2rem;
   background-color: var(--secondary-bg-color);
 }
 
@@ -98,15 +125,33 @@ footer {
   background-color: var(--bg-red-color);
 }
 
-.contacts p, .link-text { 
+.contacts {
+  grid-template-columns: 1fr;
+}
+
+.contacts p,
+.footer-link-text {
   color: var(--link-color);
 }
 
-.contacts, .footer-li {
-  gap: 1rem;
+.footer-link-text:hover {
+  text-decoration: underline;
 }
 
-.link-text {
+.contacts,
+.footer-li {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 0;
+}
+
+.footer-link-text {
   text-decoration: none;
 }
 
@@ -117,5 +162,128 @@ footer {
 ::-webkit-scrollbar-thumb {
   background: var(--bg-red-color);
   border-radius: 10px;
+}
+
+
+/* Media Queues */
+
+@media screen and (min-width: 576px) {
+
+  .header {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    max-width: auto;
+  }
+
+  .header .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .header .name {
+    font-size: 1.125rem;
+  }
+
+}
+
+@media screen and (min-width: 680px) {  
+  .header .name {
+    font-size: 1.25rem;
+  }
+
+  .header .title {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+
+  .header .contact-icons {
+    gap: 2rem;
+  }
+
+  .header .contact-icons 
+  .contact-item a img, .footer-li img{
+    width: 1.5rem;
+  } 
+
+  .list-soft-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts {
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 42.5rem;
+  }
+
+  .description {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .header .name {
+    font-size: 1.75rem;
+  }
+
+  .header .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .header .contact-icons {
+    gap: 3rem;
+  }
+
+  .header .contact-icons 
+  .contact-item a img, .footer-li img {
+    width: 1.875rem;
+  } 
+  
+  .description {
+    max-width: 50rem;
+  }
+  
+  .description p,
+  .list-soft-skills li {
+    font-size: 1.25rem;
+  }
+
+  .about-me .profile-photo img {
+    width: 11.25rem;
+  }
+
+  .list-hard-skills li figure figcaption {
+    font-size: .875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 20rem 0;
+  }
+
+  .header .name {
+    font-size: 2rem;
+  }
+
+  .header .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .about-me .profile-photo img {
+    width: 13.5rem;
+  }
+
+  .contacts {
+    max-width: 60rem;
+    font-size: 1.25rem;
+  }
 }
 

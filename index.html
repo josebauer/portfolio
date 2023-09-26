@@ -64,28 +64,28 @@
   <!-- Main -->
   <main>
     <!-- Header -->
-    <header class="header d-flex mt-5 flex-column">
+    <header class="header d-flex px-5 flex-column">
       <p class="name">JOSÉ HENRIQUE BAUER</p>
       <h1 class="title">FRONT-END DEVELOPER</h1>
-      <ul class="d-flex contact-icons">
+      <ul class="d-flex contact-icons pt-lg-2">
         <li class="contact-item">
           <a href="https://github.com/josebauer">
-            <img src="./assets/images/icons/github-logo.svg" width="20px" alt="">
+            <img src="./assets/images/icons/github-logo.svg" alt="">
           </a>
         </li>
         <li class="contact-item">
           <a href="https://www.linkedin.com/in/jose-henrique-bauer/">
-            <img src="./assets/images/icons/linkedIn-logo-black.svg" width="20px" alt="">
+            <img src="./assets/images/icons/linkedIn-logo-black.svg" alt="">
           </a>
         </li>
         <li class="contact-item">
           <a href="tel:(47) 9 99759-4781">
-            <img src="./assets/images/icons/phone.svg" width="18px" alt="">
+            <img src="./assets/images/icons/phone.svg" alt="">
           </a>
         </li>
         <li class="contact-item">
           <a href="mailto:josebauer.dev@gmail.com">
-            <img src="./assets/images/icons/email-icon.svg" width="18px" alt="">
+            <img src="./assets/images/icons/email-icon.svg" alt="">
           </a>
         </li>
       </ul>
@@ -94,13 +94,13 @@
 
     <!-- Section 1 - About me -->
     <section id="about-me" class="about-me d-flex flex-column p-5">
-      <figure class="profile-photo">
+      <figure class="profile-photo p-xl-5">
         <img src="./assets/images/profile-photo.jpg">
       </figure>
-      <h2>SOBRE MIM</h2>
-      <div class="description">
+      <h2 class="subtitle mb-sm-3 mb-lg-4 mb-xl-5">SOBRE MIM</h2>
+      <div class="description mb-xl-5">
         <p>
-          Meu nome é José Henrique Bauer, tenho 21 anos e estou cursando Ciência da Computação.
+          Meu nome é José Henrique Bauer, moro em Canoinhas-SC, tenho 21 anos e estou cursando Ciência da Computação.
         </p>
         <p>
           Sou estudante de desenvolvimento web / Front-End, sempre buscando evoluir e aprender coisas novas a cada dia.
@@ -112,42 +112,42 @@
     </section>
 
     <!-- Section 2 - Skills -->
-    <section id="skills" class="d-flex flex-column align-items-center">
+    <section id="skills" class="d-flex flex-column align-items-center p-5">
       <!-- Hard Skills -->
-      <div class="d-flex flex-column align-items-center my-5">
-        <h2>HARD SKILLS</h2>
-        <ul class="list-hard-skills d-flex align-items-end justify-content-center mx-5 px-3 mt-3">
+      <div class="my-5">
+        <h2 class="subtitle text-center mb-3 mb-sm-4 mb-lg-5">HARD SKILLS</h2>
+        <ul class="list-hard-skills mx-5 px-3 d-md-flex">
           <li class="d-flex text-center">
             <figure>
               <img src="./assets/images/icons/html5.svg" alt="">
               <figcaption>HTML5</figcaption>
             </figure>
           </li>
-          <li class="d-flex text-center">
+          <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/logo-css3.svg" alt="">
               <figcaption>CSS3</figcaption>
             </figure>
           </li>
-          <li class="d-flex text-center">
+          <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/logo-js.svg" alt="">
               <figcaption>JS</figcaption>
             </figure>
           </li>
-          <li class="d-flex text-center">
+          <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/html5.svg" alt="">
-              <figcaption>NODE.JS</figcaption>
+              <figcaption class="stack-subtitle">NODE.JS</figcaption>
             </figure>
           </li>
-          <li class="d-flex text-center">
+          <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/git-logo.svg" alt="">
               <figcaption>GIT</figcaption>
             </figure>
           </li>
-          <li class="d-flex text-center">
+          <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/logo-github.svg" alt="">
               <figcaption>GITHUB</figcaption>
@@ -157,9 +157,9 @@
       </div>
 
       <!-- Soft Skills -->
-      <div class="d-flex flex-column align-items-center mb-5">
-        <h2>SOFT SKILLS</h2>
-        <ul class="list-soft-skills d-flex flex-column align-items-start justify-content-center mx-5 mt-3 p-0">
+      <div class="mb-5">
+        <h2 class="subtitle text-center mb-3 mb-sm-4 mb-lg-5">SOFT SKILLS</h2>
+        <ul class="list-soft-skills mx-5 p-0">
           <li>ORGANIZAÇÃO</li>
           <li>COMUNICAÇÃO</li>
           <li>PROATIVIDADE</li>
@@ -173,8 +173,10 @@
 
     <!-- Section 3 - Projects -->
     <section id="projects" class="py-5">
-      <h2 class="text-center mb-4">PROJETOS</h2>
-      <div class="projects-container pb-2 mx-5 col-xs-3">
+      <h2 class="subtitle text-center mb-4 
+      mb-sm-5 mt-lg-3">PROJETOS</h2>
+      <div class="projects-container pb-2 mx-5 
+      col-xs-3 px-lg-auto d-lg-flex justify-content-lg-evenly">
         <div class="card" style="width: 17rem;">
           <img src="./assets/images/projects-thumb/calc-web.PNG" class="card-img-top" alt="...">
           <div class="card-body">
@@ -203,24 +205,24 @@
     </section>
 
     <!-- Footer - Contact -->
-    <footer class="py-5">
-      <h2 class="text-center mb-4">CONTATO</h2>
-      <ul class="contacts d-flex align-items-start flex-column px-5">
+    <footer id="contact" class="py-5">
+      <h2 class="subtitle text-center mb-4 mb-md-5">CONTATO</h2>
+      <ul class="contacts grid px-5">
         <li class="footer-li d-flex">
           <img src="./assets/images/icons/github-logo-footer.svg" alt="GitHub">
-          <a class="link-text" href="https://github.com/josebauer">/JOSEBAUER</a>
+          <a class="footer-link-text" href="https://github.com/josebauer">/JOSEBAUER</a>
         </li>
-        <li class="footer-li d-flex justify-content-center">
+        <li class="footer-li d-flex">
           <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="LinkedIn">
-          <a class="link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/">IN/JOSE-HENRIQUE-BAUER</a>
+          <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/">IN/JOSE-HENRIQUE-BAUER</a>
         </li>
-        <li class="footer-li d-flex justify-content-center">
-          <img class="test" src="./assets/images/icons/email-icon-footer.svg" width="20px" alt="LinkedIn">
-          <a class="link-text" href="mailto:josebauer.dev@gmail.com">JOSEBAUER.DEV@GMAIL.COM</a>
+        <li class="footer-li d-flex">
+          <img src="./assets/images/icons/email-icon-footer.svg" alt="Email">
+          <a class="footer-link-text" href="mailto:josebauer.dev@gmail.com">JOSEBAUER.DEV@GMAIL.COM</a>
         </li>
-        <li class="footer-li d-flex justify-content-center">
-          <img src="./assets/images/icons/phone-icon-footer.svg" width="20px" alt="LinkedIn">
-          <a class="link-text" href="tel:(47) 9 99759-4781">(47) 9 99759-4781</a>
+        <li class="footer-li d-flex">
+          <img src="./assets/images/icons/phone-icon-footer.svg" alt="Telefone">
+          <a class="footer-link-text" href="tel:(47) 9 99759-4781">(47) 9 99759-4781</a>
         </li>
       </ul>
     </footer>
