@@ -16,16 +16,16 @@ section {
   scroll-margin-top: 18rem;
 }
 
-.navbar-brand:hover, 
-.navbar-brand:visited { 
+.navbar-brand:hover,
+.navbar-brand:visited {
   text-decoration: none;
-  color: var(--link-color)  
+  color: var(--link-color)
 }
 
-.nav-link, 
-.navbar-brand, 
+.nav-link,
+.navbar-brand,
 .navbar-toggler {
-  color: var(--link-color); 
+  color: var(--link-color);
 }
 
 .navbar {
@@ -34,8 +34,11 @@ section {
 }
 
 .nav-item .nav-link,
-.description p, 
-.card-text, .view-more, .btn, .project-description p {
+.description p,
+.card-text,
+.view-more,
+.btn,
+.project-description p {
   font-family: 'Quicksand', sans-serif;
 }
 
