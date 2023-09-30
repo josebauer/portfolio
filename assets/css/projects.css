@@ -1,5 +1,7 @@
 .project {
   gap: 3rem;
+  margin-top: 4rem;
+  max-width: 100vw;
 }
 
 .buttons {
@@ -11,6 +13,7 @@
   background-color: var(--bg-red-color);
   color: var(--link-color);
   border-color: var(--bg-red-color);
+  font-size: 0.875rem;
 }
 
 .btn:hover {
@@ -22,4 +25,29 @@
 
 .project-description {
   background-color: var(--secondary-bg-color);
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+@media screen and (min-width: 480px) {
+  .btn {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .btn {
+    max-width: 13.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    max-width: 80vw;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
 }

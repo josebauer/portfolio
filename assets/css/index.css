@@ -1,32 +1,4 @@
-.navbar-toggler {
-  border-color: #000;
-}
-
-.nav-link {
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-}
-
-.nav-link:focus {
-  color: var(--link-color);
-}
-
-.header .contact-icons .contact-item a img,
-.footer-li img {
-  width: 1.25rem;
-}
-
-.nav-link:hover,
-.nav-link:active {
-  background-color: var(--link-color);
-  color: var(--bg-red-color);
-  transition: 300ms linear;
-}
-
-.navbar-toggler,
-.header {
-  background-color: var(--primary-bg-color);
-}
+/* Header */
 
 .header {
   justify-content: center;
@@ -34,6 +6,7 @@
   max-height: 100%;
   padding: 6rem 0;
   margin-top: 4rem;
+  background-color: var(--primary-bg-color);
 }
 
 .header .title {
@@ -47,6 +20,10 @@
   padding: 0;
 }
 
+.header .contact-icons .contact-item a img {
+  width: 1.25rem;
+}
+
 .contact-icons {
   justify-content: center;
   align-items: center;
@@ -58,12 +35,15 @@
   transform: scale(1.25);
 }
 
+
+/* Section - About me */
+
 .about-me {
   background-color: var(--secondary-bg-color);
   max-height: 100%;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .about-me .profile-photo img {
@@ -71,9 +51,7 @@
   border-radius: 50%;
 }
 
-.description p {
-  text-align: justify;
-}
+/* Section - Skills */
 
 .list-hard-skills {
   flex-flow: row wrap;
@@ -92,6 +70,9 @@
   content: '✱ ';
   padding-right: 0.5rem;
 }
+
+
+/* Section - Projects */
 
 #projects {
   background-color: var(--secondary-bg-color);
@@ -119,51 +100,6 @@
   border-color: var(--bg-red-color);
   color: var(--bg-red-color);
 }
-
-footer {
-  color: var(--link-color);
-  background-color: var(--bg-red-color);
-}
-
-.contacts {
-  grid-template-columns: 1fr;
-}
-
-.contacts p,
-.footer-link-text {
-  color: var(--link-color);
-}
-
-.footer-link-text:hover {
-  text-decoration: underline;
-}
-
-.contacts,
-.footer-li {
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.contacts {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: start;
-  gap: 0;
-}
-
-.footer-link-text {
-  text-decoration: none;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--bg-red-color);
-  border-radius: 10px;
-}
-
 
 /* Media Queues */
 
@@ -209,16 +145,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  .contacts {
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    max-width: 42.5rem;
-  }
-
-  .description {
-    max-width: 40rem;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -241,11 +167,6 @@ footer {
     width: 1.875rem;
   }
 
-  .description {
-    max-width: 50rem;
-  }
-
-  .description p,
   .list-soft-skills li {
     font-size: 1.25rem;
   }
@@ -273,16 +194,7 @@ footer {
     line-height: 6rem;
   }
 
-  .subtitle {
-    font-size: 2.5rem;
-  }
-
   .about-me .profile-photo img {
     width: 13.5rem;
-  }
-
-  .contacts {
-    max-width: 60rem;
-    font-size: 1.25rem;
   }
 }
