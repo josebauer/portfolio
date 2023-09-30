@@ -29,6 +29,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
+
+  scroll-margin-top: 15rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -53,6 +55,10 @@
 @media screen and (min-width: 992px) {
   .project {
     padding: 4rem 7rem;
+  }
+
+  .project-description {
+    scroll-margin-top: 5rem;
   }
 }
 
