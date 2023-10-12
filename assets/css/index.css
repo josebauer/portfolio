@@ -10,8 +10,8 @@
 }
 
 .header .title {
-  font-size: 2.625rem;
-  line-height: 2.625rem;
+  font-size: 2.375rem;
+  line-height: 2.375rem;
   margin-bottom: 0;
 }
 
@@ -103,6 +103,14 @@
 
 /* Media Queues */
 
+@media screen and (min-width: 380px) {
+  .header .title {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
 
   .header {
@@ -184,7 +192,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .header {
     padding: 20rem 0;
   }
