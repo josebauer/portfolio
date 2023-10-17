@@ -33,6 +33,7 @@
 
 .contact-item:hover {
   transform: scale(1.25);
+  transition: 300ms linear;
 }
 
 .arrow-down {
