@@ -35,6 +35,11 @@
   transform: scale(1.25);
 }
 
+.arrow-down {
+  display: inline-block;
+  width: 50px;
+}
+
 
 /* Section - About me */
 
@@ -173,6 +178,10 @@
   .header .contact-icons .contact-item a img,
   .footer-li img {
     width: 1.875rem;
+  }
+
+  .arrow-down {
+    width: 70px;
   }
 
   .list-soft-skills li {

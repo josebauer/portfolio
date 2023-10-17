@@ -35,8 +35,7 @@ section {
 
 .nav-link:hover,
 .nav-link:active {
-  background-color: var(--link-color);
-  color: var(--bg-red-color);
+  color: #cccccc;
   transition: 300ms linear;
 }
 
@@ -62,7 +61,8 @@ section {
 .description p,
 .card-text,
 .view-more,
-.btn, .footer-link-text {
+.btn,
+.footer-link-text {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -149,11 +149,13 @@ footer {
     scroll-margin-top: 5rem;
   }
 
-  .description, .contacts {
+  .description,
+  .contacts {
     max-width: 50rem;
   }
 
-  .description p, .contacts {
+  .description p,
+  .contacts {
     font-size: 1.25rem;
   }
 
