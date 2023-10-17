@@ -63,12 +63,16 @@
   gap: 2.5rem;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .list-hard-skills li figure figcaption {
   margin-top: 0.725rem;
   font-size: 0.725rem;
+}
+
+.tech-icons {
+  max-width: 52px;
 }
 
 .list-soft-skills li::before {
@@ -131,6 +135,10 @@
 
   .header .name {
     font-size: 1.125rem;
+  }
+
+  .list-hard-skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }
