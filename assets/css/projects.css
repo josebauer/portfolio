@@ -33,6 +33,10 @@
   scroll-margin-top: 15rem;
 }
 
+.description-list li {
+  list-style: initial;
+}
+
 @media screen and (min-width: 480px) {
   .btn {
     font-size: 1.25rem;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto | Calculadora Web</title>
+  <title>Projeto | Scuderia Ferrari</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +13,9 @@
   <!-- Others CSS Styles -->
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/projects.css">
+
+  <!-- Animation Lib -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,13 +49,16 @@
   <main>
     <!-- Header -->
     <header class="d-flex justify-content-center">
-      <div class="project d-flex flex-column">
-        <h2 class="subtitle text-center m-0">CALCULADORA WEB</h2>
-        <img src="./assets/images/projects-demonstration/demonstration-calc.png" alt="emonstração do projeto numa tela de Desktop, celular, tablet e notebook">
-        <div class="buttons d-flex justify-content-center mt-xl-4">
-          <a href="https://josebauer.github.io/calculadora-web/" class="btn view-more d-flex justify-content-center" target="_blank">Ver Site
+      <div class="project d-flex flex-column" data-aos="fade-down" data-aos-duration="2500">
+        <h2 class="subtitle text-center m-0">SCUDERIA FERRARI</h2>
+        <img src="./assets/images/projects-demonstration/demonstration-ferrari.png"
+          alt="emonstração do projeto numa tela de Desktop, celular, tablet e notebook">
+        <div class="buttons d-flex flex-column flex-sm-row justify-content-center mt-xl-4">
+          <a href="https://josebauer.github.io/scuderia-ferrari-page/" class="btn view-more text-center"
+            target="_blank">Ver Projeto
             Funcionando</a>
-          <a href="https://github.com/josebauer/calculadora-web" class="btn view-more d-flex justify-content-center" target="_blank">Ver
+          <a href="https://github.com/josebauer/scuderia-ferrari-page" class="btn view-more text-center"
+            target="_blank">Ver
             Repositório no GitHub</a>
         </div>
       </div>
@@ -60,12 +66,26 @@
 
     <!-- Section Project Description -->
     <section id="description" class="project-description p-5 d-flex flex-column">
-      <h2 class="subtitle m-sm-3 m-lg-4 m-xl-5">DESCRIÇÃO DO PROJETO</h2>
-      <div class="description mb-xl-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo tempora repellat dolorum eligendi porro, quod ab asperiores sit soluta, esse, officia recusandae quo quos blanditiis iusto consequatur et nisi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam temporibus, maiores quibusdam magnam officiis dolorum! Aliquam sequi eligendi commodi, voluptates eos beatae in numquam. Consequatur vel doloribus distinctio doloremque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi, molestiae repudiandae quidem autem iure quaerat odio? Provident, dicta voluptate, dolorem, expedita sequi voluptatem cupiditate rem asperiores recusandae est hic!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime expedita non iusto corporis ullam tenetur pariatur provident voluptatum laudantium! Est fugiat ipsum optio sunt esse quia voluptatem! Nostrum, eligendi quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, cum tempore? Perspiciatis tempora reprehenderit architecto facere labore nostrum sed facilis accusantium unde, quisquam odio rerum itaque nobis adipisci error accusamus.</p>
+      <h2 class="subtitle m-sm-3 m-lg-4 m-xl-5 text-center" data-aos="fade-up" data-aos-duration="2000">DESCRIÇÃO DO PROJETO</h2>
+      <div class="description mb-xl-5" data-aos="fade-up" data-aos-duration="2500">
+        <p>Site fictício da Scuderia Ferrari na Formula 1. Onde mostra um pouco sobre o carro e a equipe na temporada de 2023, além de algumas estatísticas históricas do time.</p>
+        <p>Tecnologias Utilizadas:</p>
+        <ul class="description-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>Sass (scss)</li>
+          <li>JavaScript</li>
+        </ul>
+        <p>Features:</p>
+        <ul class="description-list">
+          <li>Navbar que altera o estilo quando a página é scrollada para baixo</li>
+          <li>Textos animados usando a lib AOS</li>
+          <li>Responsividade</li>
+          <li>Carrosséis de imagens</li>
+          <li>Tabelas com informações sobre o carro e pilotos</li>
+        </ul>
+        <p>Projeto desenvolvido com o objetivo de praticar e aprimorar habilidades de desenvolvimento web, unindo com a paixão pelo automobilismo e pela Scuderia Ferrari.</p>
       </div>
     </section>
 
@@ -97,6 +117,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+  <!-- Animation Lib -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

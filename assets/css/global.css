@@ -12,11 +12,16 @@
 * {
   color: var(--primary-text-color);
   list-style: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2,
+.navbar-brand {
   font-family: 'Fugaz One', cursive;
 }
 
 section {
-  scroll-margin-top: 18rem;
+  scroll-margin-top: 16rem;
 }
 
 .navbar-toggler {
@@ -57,14 +62,6 @@ section {
   background-color: var(--bg-red-color);
 }
 
-.nav-item .nav-link,
-.description p,
-.card-text,
-.view-more,
-.btn,
-.footer-link-text {
-  font-family: 'Quicksand', sans-serif;
-}
 
 /* Description */
 
@@ -143,10 +140,9 @@ footer {
   }
 }
 
-
 @media screen and (min-width: 992px) {
   section {
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 4rem;
   }
 
   .description,

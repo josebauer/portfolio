@@ -1,4 +1,9 @@
 /* Header */
+h1,
+.name,
+.card-title {
+  font-family: 'Fugaz One', cursive;
+}
 
 .header {
   justify-content: center;
@@ -43,6 +48,10 @@
 
 
 /* Section - About me */
+
+#about-me {
+  scroll-margin-top: 4rem;
+}
 
 .about-me {
   background-color: var(--secondary-bg-color);

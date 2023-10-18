@@ -13,6 +13,9 @@
   <!-- Others CSS Styles -->
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/css/global.css">
+
+  <!-- Animation Lib -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +52,7 @@
   <!-- Main -->
   <main>
     <!-- Header -->
-    <header class="header d-flex px-5 flex-column">
+    <header class="header d-flex px-5 flex-column" data-aos="fade-up" data-aos-duration="2500">
       <p class="name">JOSÉ HENRIQUE BAUER</p>
       <h1 class="title">FRONT-END DEVELOPER</h1>
       <ul class="d-flex contact-icons pt-lg-2">
@@ -83,11 +86,11 @@
 
     <!-- Section 1 - About me -->
     <section id="about-me" class="about-me d-flex flex-column p-5">
-      <figure class="profile-photo p-xl-5">
+      <figure class="profile-photo p-xl-5" data-aos="zoom-in" data-aos-duration="2000">
         <img src="./assets/images/profile-photo.jpg">
       </figure>
-      <h2 class="subtitle mb-sm-3 mb-lg-4 mb-xl-5">SOBRE MIM</h2>
-      <div class="description mb-xl-5">
+      <h2 class="subtitle mb-sm-3 mb-lg-4 mb-xl-5" data-aos="fade-up" data-aos-duration="2500">SOBRE MIM</h2>
+      <div class="description mb-xl-5" data-aos="fade-up" data-aos-duration="3000">
         <p>
           Meu nome é José Henrique Bauer, moro em Canoinhas-SC, tenho 21 anos e estou cursando Ciência da Computação.
         </p>
@@ -104,8 +107,8 @@
     <section id="skills" class="d-flex flex-column align-items-center px-5 py-3 py-xl-5">
       <!-- Hard Skills -->
       <div class="my-5">
-        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3">HARD SKILLS</h2>
-        <ul class="list-hard-skills">
+        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="1500">HARD SKILLS</h2>
+        <ul class="list-hard-skills" data-aos="fade-up" data-aos-duration="2000">
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/html5.svg" alt="Ícone do HTML5" class="tech-icons">
@@ -121,25 +124,25 @@
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/logo-js.svg" alt="  ícone do JavaScript" class="tech-icons">
-              <figcaption>JAVASCRIPT</figcaption>
+              <figcaption>JavaScript</figcaption>
             </figure>
           </li>
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
-              <img src="./assets/images/icons/typescript.svg" alt="  ícone do JavaScript" class="tech-icons">
-              <figcaption>TYPESCRIPT</figcaption>
+              <img src="./assets/images/icons/typescript.svg" alt="  ícone do TypeScript" class="tech-icons">
+              <figcaption>TypeScript</figcaption>
             </figure>
           </li>
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/node-js-icon.png" alt="Ícone do Node.js" class="tech-icons">
-              <figcaption>NODE.JS</figcaption>
+              <figcaption>Node.js</figcaption>
             </figure>
           </li>
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
-              <img src="./assets/images/icons/postgresql.svg" alt="Ícone do Node.js" class="tech-icons">
-              <figcaption>POSTGRESQL</figcaption>
+              <img src="./assets/images/icons/postgresql.svg" alt="Ícone do PostgreSQL" class="tech-icons">
+              <figcaption>PostgreSQL</figcaption>
             </figure>
           </li>
           <li class="d-flex text-center align-items-end justify-content-center">
@@ -151,7 +154,7 @@
           <li class="d-flex text-center align-items-end justify-content-center">
             <figure>
               <img src="./assets/images/icons/logo-github.svg" alt="Ícone do GitHub" class="tech-icons">
-              <figcaption>GITHUB</figcaption>
+              <figcaption>GitHub</figcaption>
             </figure>
           </li>
         </ul>
@@ -159,14 +162,14 @@
 
       <!-- Soft Skills -->
       <div class="mb-5">
-        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3">SOFT SKILLS</h2>
-        <ul class="list-soft-skills p-0">
-          <li>ORGANIZAÇÃO</li>
-          <li>COMUNICAÇÃO</li>
-          <li>PROATIVIDADE</li>
-          <li>LIDAR COM PRESSÃO</li>
-          <li>TRABALHO EM EQUIPE</li>
-          <li>SOLUÇÃO DE PROBLEMAS</li>
+        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="2500">SOFT SKILLS</h2>
+        <ul class="list-soft-skills p-0" data-aos="fade-up" data-aos-duration="3000">
+          <li>Organização</li>
+          <li>Comunicação</li>
+          <li>Proatividade</li>
+          <li>Lidar com pressão</li>
+          <li>Trabalho em equipe</li>
+          <li>Solução de problemas</li>
         </ul>
       </div>
 
@@ -174,30 +177,33 @@
 
     <!-- Section 3 - Projects -->
     <section id="projects" class="py-5">
-      <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3">PROJETOS</h2>
+      <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="1500">PROJETOS</h2>
       <div class="projects-container pb-2 mx-5
       col-xs-3 px-lg-auto d-lg-flex justify-content-lg-center">
-        <div class="card shadow-sm" style="width: 17rem;">
-          <img src="./assets/images/projects-thumb/calc-web.PNG" class="card-img-top" alt="Print do projeto Calculadora Web">
+        <div class="card shadow-sm" style="width: 17rem;" data-aos="fade-right" data-aos-duration="2500">
+          <img src="./assets/images/projects-thumb/scuderia-ferrari.PNG" class="card-img-top"
+            alt="Print do projeto Calculadora Web">
           <div class="card-body">
-            <h5 class="card-title">CALCULADORA WEB</h5>
-            <p class="card-text">Calculadora de operações básicas desenvolvido com HTML, CSS e JS</p>
+            <h5 class="card-title">SCUDERIA FERRARI</h5>
+            <p class="card-text">Site fictício da Scuderia Ferrari na Formula 1. Desenvolvido com HTML, CSS, Sass, Bootstrap e JS</p>
             <a href="./project-1.html" class="btn view-more d-flex justify-content-center">Ver detalhes</a>
           </div>
         </div>
-        <div class="card shadow-sm" style="width: 17rem;">
-          <img src="./assets/images/projects-thumb/hbo-max.PNG" class="card-img-top" alt="Print do projeto Clone HBO MAX">
+        <div class="card shadow-sm" style="width: 17rem;" data-aos="fade-up" data-aos-duration="2500">
+          <img src="./assets/images/projects-thumb/hbo-max.PNG" class="card-img-top"
+            alt="Print do projeto Clone HBO MAX">
           <div class="card-body">
             <h5 class="card-title">CLONE HBO MAX</h5>
-            <p class="card-text">Projeto de um clone da HBO MAX, desenvolvido com HTML e CSS puros</p>
+            <p class="card-text">Projeto acadêmico de um clone da HBO MAX. Desenvolvido com HTML e CSS puros</p>
             <a href="./project-2.html" class="btn view-more d-flex justify-content-center">Ver detalhes</a>
           </div>
         </div>
-        <div class="card shadow-sm" style="width: 17rem;">
-          <img src="./assets/images/projects-thumb/dream-coffee.PNG" class="card-img-top" alt="Print do projeto Cafeteria Dream Coffee">
+        <div class="card shadow-sm" style="width: 17rem;" data-aos="fade-left" data-aos-duration="2500">
+          <img src="./assets/images/projects-thumb/dream-coffee.PNG" class="card-img-top"
+            alt="Print do projeto Cafeteria Dream Coffee">
           <div class="card-body">
             <h5 class="card-title">DREAM COFFEE</h5>
-            <p class="card-text">Site de uma cafeteria, desenvolvido com HTML, CSS e Bootstrap</p>
+            <p class="card-text">Site de uma cafeteria fictícia. Projeto acadêmico desenvolvido com HTML, CSS e Bootstrap</p>
             <a href="./project-3.html" class="btn view-more d-flex justify-content-center">Ver detalhes</a>
           </div>
         </div>
@@ -214,7 +220,8 @@
         </li>
         <li class="footer-li d-flex">
           <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="Ícone do LinkedIn">
-          <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/" target="_blank">/in/jose-henrique-bauer</a>
+          <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/"
+            target="_blank">/in/jose-henrique-bauer</a>
         </li>
         <li class="footer-li d-flex">
           <img src="./assets/images/icons/email-icon-footer.svg" alt="Ícone de e-mail">
@@ -232,6 +239,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+  <!-- Animation Lib -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
