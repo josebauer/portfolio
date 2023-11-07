@@ -1,31 +1,28 @@
-/* Header */
+/* Sectrion - Presentation */
+
 h1,
 .name,
 .card-title {
   font-family: 'Fugaz One', cursive;
 }
 
-.header {
-  justify-content: center;
-  text-align: center;
-  max-height: 100%;
-  padding: 6rem 0;
+.presentation {
   margin-top: 4rem;
   background-color: var(--primary-bg-color);
 }
 
-.header .title {
+.presentation .title {
   font-size: 2.375rem;
   line-height: 2.375rem;
   margin-bottom: 0;
 }
 
-.header .name {
+.presentation .name {
   margin: 0;
   padding: 0;
 }
 
-.header .contact-icons .contact-item a img {
+.presentation .contact-icons .contact-item a img {
   width: 1.25rem;
 }
 
@@ -44,23 +41,10 @@ h1,
   transform: scale(1.25);
 }
 
-.arrow-down {
-  display: inline-block;
-  width: 50px;
-}
-
-
 /* Section - About me */
-
-#about-me {
-  scroll-margin-top: 4rem;
-}
 
 .about-me {
   background-color: var(--secondary-bg-color);
-  max-height: 100%;
-  align-items: center;
-  justify-content: center;
   gap: 0.625rem;
 }
 
@@ -97,6 +81,7 @@ h1,
 /* Section - Projects */
 
 #projects {
+  min-height: 100vh;
   background-color: var(--secondary-bg-color);
 }
 
@@ -126,7 +111,7 @@ h1,
 /* Media Queues */
 
 @media screen and (min-width: 380px) {
-  .header .title {
+  .presentation .title {
     font-size: 2.75rem;
     line-height: 2.75rem;
   }
@@ -134,19 +119,12 @@ h1,
 
 
 @media screen and (min-width: 576px) {
-
-  .header {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    max-width: auto;
-  }
-
-  .header .title {
+  .presentation .title {
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
 
-  .header .name {
+  .presentation .name {
     font-size: 1.125rem;
   }
 
@@ -157,20 +135,20 @@ h1,
 }
 
 @media screen and (min-width: 680px) {
-  .header .name {
+  .presentation .name {
     font-size: 1.25rem;
   }
 
-  .header .title {
+  .presentation .title {
     font-size: 3.75rem;
     line-height: 3.75rem;
   }
 
-  .header .contact-icons {
+  .presentation .contact-icons {
     gap: 2rem;
   }
 
-  .header .contact-icons .contact-item a img,
+  .presentation .contact-icons .contact-item a img,
   .footer-li img {
     width: 1.5rem;
   }
@@ -181,28 +159,29 @@ h1,
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 975px) {
+  .arrow-right {
+    display: none;
+  }
+}
 
-  .header .name {
+@media screen and (min-width: 992px) {
+  .presentation .name {
     font-size: 1.75rem;
   }
 
-  .header .title {
+  .presentation .title {
     font-size: 4rem;
     line-height: 4rem;
   }
 
-  .header .contact-icons {
+  .presentation .contact-icons {
     gap: 3rem;
   }
 
-  .header .contact-icons .contact-item a img,
+  .presentation .contact-icons .contact-item a img,
   .footer-li img {
     width: 1.875rem;
-  }
-
-  .arrow-down {
-    width: 70px;
   }
 
   .list-soft-skills li {
@@ -223,15 +202,11 @@ h1,
 }
 
 @media screen and (min-width: 1400px) {
-  .header {
-    padding: 20rem 0;
-  }
-
-  .header .name {
+  .presentation .name {
     font-size: 2rem;
   }
 
-  .header .title {
+  .presentation .title {
     font-size: 6rem;
     line-height: 6rem;
   }

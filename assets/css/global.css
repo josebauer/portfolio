@@ -21,7 +21,8 @@ h2,
 }
 
 section {
-  scroll-margin-top: 16rem;
+  scroll-margin-top: 4rem;
+  min-height: 100vh;
 }
 
 .navbar-toggler {
@@ -62,6 +63,12 @@ section {
   background-color: var(--bg-red-color);
 }
 
+/* Arrows */
+
+.arrow-down,
+.arrow-right {
+  width: 50px;
+}
 
 /* Description */
 
@@ -141,8 +148,8 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  section {
-    scroll-margin-top: 4rem;
+  .arrow-down {
+    width: 70px;
   }
 
   .description,

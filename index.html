@@ -22,40 +22,44 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top p-2">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3" href="#">JHBAUER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">Sobre mim</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projetos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">JHBAUER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  
+  </header>
 
   <!-- Main -->
   <main>
-    <!-- Header -->
-    <header class="header d-flex px-5 flex-column" data-aos="fade-up" data-aos-duration="2500">
+    <!-- Section 1 - Presentation -->
+    <section class="presentation d-flex flex-column justify-content-center text-center px-5" data-aos="fade-down" data-aos-duration="2500">
       <p class="name">JOSÉ HENRIQUE BAUER</p>
       <h1 class="title">FRONT-END DEVELOPER</h1>
       <ul class="d-flex contact-icons pt-lg-2">
@@ -85,10 +89,10 @@
           <img src="./assets/images/icons/arrow-down.gif" alt="Seta para baixo" class="mt-1 mt-md-5 arrow-down">
         </a>
       </div>
-    </header>
+    </section>
 
-    <!-- Section 1 - About me -->
-    <section id="about-me" class="about-me d-flex flex-column p-5">
+    <!-- Section 2 - About me -->
+    <section id="about-me" class="about-me d-flex flex-column justify-content-center align-items-center px-5">
       <figure class="profile-photo p-xl-5" data-aos="zoom-in" data-aos-duration="2000">
         <img src="./assets/images/profile-photo.jpg">
       </figure>
@@ -106,8 +110,8 @@
       </div>
     </section>
 
-    <!-- Section 2 - Skills -->
-    <section id="skills" class="d-flex flex-column align-items-center px-5 py-3 py-xl-5">
+    <!-- Section 3 - Skills -->
+    <section id="skills" class="d-flex flex-column align-items-center justify-content-center px-5 py-3 py-xl-5">
       <!-- Hard Skills -->
       <div class="my-5">
         <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="1500">HARD SKILLS</h2>
@@ -165,8 +169,8 @@
 
       <!-- Soft Skills -->
       <div class="mb-5">
-        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="2500">SOFT SKILLS</h2>
-        <ul class="list-soft-skills p-0" data-aos="fade-up" data-aos-duration="3000">
+        <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-down" data-aos-duration="2500">SOFT SKILLS</h2>
+        <ul class="list-soft-skills p-0" data-aos="fade-down" data-aos-duration="3000">
           <li>Organização</li>
           <li>Comunicação</li>
           <li>Proatividade</li>
@@ -178,9 +182,9 @@
 
     </section>
 
-    <!-- Section 3 - Projects -->
-    <section id="projects" class="py-5">
-      <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3" data-aos="fade-up" data-aos-duration="1500">PROJETOS</h2>
+    <!-- Section 4 - Projects -->
+    <section id="projects" class="d-flex flex-column justify-content-center">
+      <h2 class="subtitle text-center mt-5 mt-lg-0 mb-5" data-aos="fade-down" data-aos-duration="1500">PROJETOS</h2>
       <div class="projects-container pb-2 mx-5
       col-xs-3 px-lg-auto d-lg-flex justify-content-lg-center">
         <div class="card shadow-sm" style="width: 17rem;" data-aos="fade-right" data-aos-duration="2500">
@@ -192,7 +196,7 @@
             <a href="./project-1.html" class="btn view-more d-flex justify-content-center">Ver detalhes</a>
           </div>
         </div>
-        <div class="card shadow-sm" style="width: 17rem;" data-aos="fade-up" data-aos-duration="2500">
+        <div class="card shadow-sm" style="width: 17rem;" data-aos="zoom-in" data-aos-duration="2500">
           <img src="./assets/images/projects-thumb/hbo-max.PNG" class="card-img-top"
             alt="Print do projeto Clone HBO MAX">
           <div class="card-body">
@@ -211,32 +215,36 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Footer - Contact -->
-    <footer id="contact" class="py-5">
-      <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3">CONTATO</h2>
-      <ul class="contacts grid px-5">
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/github-logo-footer.svg" alt="Ícone do GitHub">
-          <a class="footer-link-text" href="https://github.com/josebauer" target="_blank">/josebauer</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="Ícone do LinkedIn">
-          <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/"
-            target="_blank">/in/jose-henrique-bauer</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/email-icon-footer.svg" alt="Ícone de e-mail">
-          <a class="footer-link-text" href="mailto:josebauer.dev@gmail.com" target="_blank">josebauer.dev@gmail.com</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/phone-icon-footer.svg" alt="Ícone de telefone">
-          <a class="footer-link-text" href="tel:(47) 9 9759-4781" target="_blank">(47) 9 9759-4781</a>
-        </li>
-      </ul>
-    </footer>
+      <div class="container text-center">
+          <img src="./assets/images/icons/arrow-right.gif" alt="Seta para a direita" class="m-5 arrow-right">
+      </div>
+    </section>
   </main>
+
+  <!-- Footer - Contact -->
+  <footer id="contact" class="py-5">
+    <h2 class="subtitle text-center mb-4 mb-sm-5 mt-lg-3">CONTATO</h2>
+    <ul class="contacts grid px-5">
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/github-logo-footer.svg" alt="Ícone do GitHub">
+        <a class="footer-link-text" href="https://github.com/josebauer" target="_blank">/josebauer</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="Ícone do LinkedIn">
+        <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/"
+          target="_blank">/in/jose-henrique-bauer</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/email-icon-footer.svg" alt="Ícone de e-mail">
+        <a class="footer-link-text" href="mailto:josebauer.dev@gmail.com" target="_blank">josebauer.dev@gmail.com</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/phone-icon-footer.svg" alt="Ícone de telefone">
+        <a class="footer-link-text" href="tel:(47) 9 9759-4781" target="_blank">(47) 9 9759-4781</a>
+      </li>
+    </ul>
+  </footer>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

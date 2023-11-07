@@ -1,8 +1,7 @@
 .project {
-  gap: 3rem;
+  gap: 2rem;
   margin-top: 4rem;
   max-width: 100%;
-  padding: 3rem;
 }
 
 .buttons {
@@ -26,11 +25,7 @@
 
 .project-description {
   background-color: var(--secondary-bg-color);
-  align-items: center;
-  justify-content: center;
   gap: 0.625rem;
-
-  scroll-margin-top: 15rem;
 }
 
 .description-list li {
@@ -53,16 +48,11 @@
   .project {
     padding: 3rem 5rem;
   }
-  
 }
 
 @media screen and (min-width: 992px) {
   .project {
     padding: 4rem 7rem;
-  }
-
-  .project-description {
-    scroll-margin-top: 5rem;
   }
 }
 

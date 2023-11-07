@@ -22,37 +22,40 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top p-2">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3" href="./index.html">JHBAUER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Voltar ao início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projeto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#description">Descrição</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="./index.html">JHBAUER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Voltar ao início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projeto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#description">Descrição</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- Main -->
   <main>
-    <!-- Header -->
-    <header class="d-flex justify-content-center">
-      <div class="project d-flex flex-column" data-aos="fade-down" data-aos-duration="2500">
+    <!-- Section 1 - Project Demonstration-->
+    <section class="d-flex justify-content-center px-5">
+      <div class="project d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-duration="2500">
         <h2 class="subtitle text-center m-0">CLONE HBO MAX</h2>
         <img src="./assets/images/projects-demonstration/demonstration-dream-coffee.PNG"
           alt="Demonstração do projeto numa tela de Desktop, celular, tablet e notebook">
@@ -64,11 +67,16 @@
             target="_blank">Ver
             Repositório no GitHub</a>
         </div>
+        <div class="container text-center">
+          <a href="#description">
+            <img src="./assets/images/icons/arrow-down.gif" alt="Seta para baixo" class="mt-1 arrow-down">
+          </a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Section Project Description -->
-    <section id="description" class="project-description p-5 d-flex flex-column">
+    <!-- Section 2 - Project Description -->
+    <section id="description" class="project-description p-5 d-flex flex-column justify-content-center align-items-center">
       <h2 class="subtitle m-sm-3 m-lg-4 m-xl-5 text-center" data-aos="fade-up" data-aos-duration="2000">DESCRIÇÃO DO
         PROJETO</h2>
       <div class="description mb-xl-5" data-aos="fade-up" data-aos-duration="2500">
@@ -89,30 +97,30 @@
         </ul>
       </div>
     </section>
-
-    <!-- Footer - Contact -->
-    <footer id="contact" class="py-5 ">
-      <h2 class="subtitle text-center mb-4 mb-md-5">CONTATO</h2>
-      <ul class="contacts grid px-5">
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/github-logo-footer.svg" alt="Ícone do GitHub">
-          <a class="footer-link-text" href="https://github.com/josebauer">/josebauer</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="Ícone do LinkedIn">
-          <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/">in/jose-henrique-bauer</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/email-icon-footer.svg" alt="Ícone de e-mail">
-          <a class="footer-link-text" href="mailto:josebauer.dev@gmail.com">josebauer.dev@gmail.com</a>
-        </li>
-        <li class="footer-li d-flex">
-          <img src="./assets/images/icons/phone-icon-footer.svg" alt="Ícone de telefone">
-          <a class="footer-link-text" href="tel:(47) 9 9759-4781">(47) 9 9759-4781</a>
-        </li>
-      </ul>
-    </footer>
   </main>
+
+  <!-- Footer - Contact -->
+  <footer id="contact" class="py-5 ">
+    <h2 class="subtitle text-center mb-4 mb-md-5">CONTATO</h2>
+    <ul class="contacts grid px-5">
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/github-logo-footer.svg" alt="Ícone do GitHub">
+        <a class="footer-link-text" href="https://github.com/josebauer">/josebauer</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/linkedin-footer-logo.svg" alt="Ícone do LinkedIn">
+        <a class="footer-link-text" href="https://www.linkedin.com/in/jose-henrique-bauer/">in/jose-henrique-bauer</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/email-icon-footer.svg" alt="Ícone de e-mail">
+        <a class="footer-link-text" href="mailto:josebauer.dev@gmail.com">josebauer.dev@gmail.com</a>
+      </li>
+      <li class="footer-li d-flex">
+        <img src="./assets/images/icons/phone-icon-footer.svg" alt="Ícone de telefone">
+        <a class="footer-link-text" href="tel:(47) 9 9759-4781">(47) 9 9759-4781</a>
+      </li>
+    </ul>
+  </footer>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
