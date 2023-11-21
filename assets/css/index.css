@@ -108,12 +108,17 @@ h1,
   color: var(--bg-red-color);
 }
 
+
 /* Media Queues */
 
 @media screen and (min-width: 380px) {
   .presentation .title {
     font-size: 2.75rem;
     line-height: 2.75rem;
+  }
+  
+  .list-hard-skills {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -126,10 +131,6 @@ h1,
 
   .presentation .name {
     font-size: 1.125rem;
-  }
-
-  .list-hard-skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }
@@ -151,6 +152,10 @@ h1,
   .presentation .contact-icons .contact-item a img,
   .footer-li img {
     width: 1.5rem;
+  }
+
+  .list-hard-skills {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .list-soft-skills {
