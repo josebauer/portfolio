@@ -15,7 +15,7 @@ Praticar desenvolvimento web, aproveitando para criar um site para usar como por
 
 ## ⚙️ Features
 
-- Textos animados usando a lib <a href="https://github.com/michalsnik/aos">AOS</a>
+- Textos e elementos animados usando a lib <a href="https://github.com/michalsnik/aos">AOS</a>
 - Responsividade
 - Cards com imagens e informações dos projetos
 - Página dos projetos com demonstração, links e descrição dos projetos
