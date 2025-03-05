@@ -21,7 +21,7 @@ Praticar desenvolvimento web, aproveitando para criar um site para usar como por
 - Página dos projetos com demonstração, links e descrição dos projetos
 
 ## 🌐 Demonstração
-Acesse o resultado final do projeto <a href="https://josebauer.com.br">clicando aqui</a>.
+Acesse o resultado final do projeto <a href="https://josebauer.github.io/portfolio/">clicando aqui</a>.
 
 ## ✒️ Autor
 <p>
